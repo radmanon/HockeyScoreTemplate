@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>AJAX Example</title>
+    <link href="/img/winnipeg.png" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    
+  </head>
+  <body>
+
+<!-- Header container -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Hockey 10</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- End Header -->
+
+
+
+<!-- posts -->
+    <!-- Carousel wrapper -->
+    <div id="carouselMultiItemExample" class="carousel slide carousel-dark text-center" data-mdb-ride="carousel">
+      <!-- Inner -->
+      <div class="carousel-inner py-4">
+          <!-- Single item -->
+          <div class="carousel-item active">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-lg-4">
+                          <div class="card">
+                              <img src="img/feed1.png" class="card-img-top" alt="Waterfall" />
+                              <div class="card-body">
+                                  <h5 class="card-title">Team A Wins Championship</h5>
+                                  <p class="card-text">
+                                      The Sabres' Jiri Kulich, Blue Jackets' Nick Blankenburg and Canucks' Arshdeep Bains are just some players who deserve a look in the NHL once their teams need a call-up.
+                                  </p>
+                                  <!-- <a href="#!" class="btn btn-primary">Button</a> -->
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="col-lg-4 d-none d-lg-block">
+                          <div class="card">
+                              <img src="img/feed2.png" class="card-img-top" alt="Sunset Over the Sea" />
+                              <div class="card-body">
+                                  <h5 class="card-title">Player of the Month: John Doe</h5>
+                                  <p class="card-text">
+                                      Here's today's NHL Nugget – this Milestone Monday goes back to Nov. 20, 2019, when Henrik Lundqvist briefly became a top-five netminder in all-time NHL wins. Marc-Andre Fleury took that spot from him later in the 2019-20 season.
+                                  </p>
+                                  <!-- <a href="#!" class="btn btn-primary">Button</a> -->
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="col-lg-4 d-none d-lg-block">
+                          <div class="card">
+                              <img src="img/feed3.png" class="card-img-top" alt="Sunset over the Sea" />
+                              <div class="card-body">
+                                  <h5 class="card-title">Upcoming Hockey Tournament</h5>
+                                  <p class="card-text">
+                                      EAST LANSING, MICH. - To say that Artyom Levshunov is a quiet interview would be an understatement. But hey - for a kid whose first language is not English, that's understandable. And even though librarians would tell him to turn it up a notch, the freshman Michigan State defenseman and high-end 2024 NHL draft prospect makes a lot of noise on the ice to make up for it.
+                                  </p>
+                                  <!-- <a href="#!" class="btn btn-primary">Button</a> -->
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- Inner -->
+      </div>
+  </div>
+  <!-- Carousel wrapper -->
+<!-- end posts-->
+
+
+<!-- the AJAX content -->
+<div id="content">
+  <div class="ajax_content">
+    <!-- <p>Get Weekdays as HTML</p> -->
+    <p>Live Results</p>
+    <input id="weekdaysHTML" type="button" value="Submit"/>
+    <input class="clear" type="button" value="Clear"/>
+    <div class="ajax-stuff" id="weekdays-html"></div>
+  </div>
+  <div class="ajax_content">
+    <!-- <p>Get Weekdays as JSON</p> -->
+    <p>The Best Players of the Month</p>
+    <input  id="weekdaysJSON" type="button" value="Submit"/>
+    <input class="clear" type="button" value="Clear"/>
+    <div class="ajax-stuff" id="weekdays-json"></div>
+  </div>
+  <div class="third_ajax_content">
+    <!-- <p>Get Google Map Marker data (JSON)</p> -->
+    <p>Next Matches</p>
+    <input  id="marker" type="button" value="Submit"/>
+    <input class="clear" type="button" value="Clear"/>
+    <div class="ajax-stuff" id="marker-data"></div>
+  </div>
+</div>
+<!-- END of the AJAX content -->
+
+
+    <!--footer-->
+    <footer class="bg-dark text-white text-center py-3">
+      <p>&copy; 2023 Radman Mohammadi BCIT</p>
+    </footer>
+    <!-- end footer-->
+
+
+    
+  
+    <!-- Bootstrap JavaScript and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  
+
+    <script src="/js/client.js"></script>
+    <script src="/js/index.js"></script>
+
+
+    <script>
+      // ... (your existing code)
+
+function renderData(data) {
+    const appDiv = document.getElementById('marker-data');
+
+    data.forEach(item => {
+        const cardDiv = document.createElement('div');
+        cardDiv.classList.add('card');
+
+        const image = document.createElement('img');
+        image.classList.add('adjusted-image'); // Add this line to assign the class
+        image.src = item.image;
+        image.alt = item.title;
+
+        // ... (your existing code)
+    });
+}
+
+// ... (your existing code)
+
+    </script>
+
+
+  </body>
+</html>

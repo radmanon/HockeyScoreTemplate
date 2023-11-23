@@ -1,0 +1,136 @@
+@import url(https://fonts.googleapis.com/css?family=Hind);
+
+body {
+  font-family: "Hind", sans-serif;
+  font-size: 14pt;
+  margin: 0;
+  padding: 0;
+  background-image: url('/img/background.png');
+  background-size: cover;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.ajax_content {
+  background-color: bisque;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 15px; /* Adjust the border-radius as needed for more or less rounding */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%; /* Make the section full-width on small screens */
+  max-width: 400px; /* Set a maximum width for larger screens */
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ajax_content p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.ajax_content input {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 10px; /* Add margin-bottom to create space between buttons */
+}
+
+.clear {
+  background-color: #e74c3c;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 600px) {
+  .ajax_content {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+.third_ajax_content {
+  background-color: bisque;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 15px; /* Adjust the border-radius as needed for more or less rounding */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%; /* Make the section full-width on small screens */
+  max-width: 600px; /* Set a maximum width for larger screens */
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.third_ajax_content p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.third_ajax_content input {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 10px; /* Add margin-bottom to create space between buttons */
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 600px) {
+  .third_ajax_content {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+
+.adjusted-image {
+  max-width: 100%; /* Adjust the maximum width as needed */
+  max-height: 200px; /* Adjust the maximum height as needed */
+  height: auto;
+}
+
+
+
+
+
+/* the css of post section in index.html*/
+.card-body {
+  height: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.carousel-item {
+  display: flex;
+  align-items: stretch;
+}
+
+
+
+

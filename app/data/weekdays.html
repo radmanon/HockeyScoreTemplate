@@ -1,0 +1,149 @@
+
+<style>
+    
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-image: url('../img/background.png');
+    background-size: cover;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: wheat;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.status-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.alive { background-color: red; }
+.finished { background-color: green; }
+.paused { background-color: yellow; }
+
+.team-logo {
+    width: 30px; /* Adjust the width as needed */
+    border-radius: 50%;
+}
+</style>
+
+
+<table>
+    <thead>
+        <tr>
+            <th>Image</th>
+            <th>Status</th>
+            <th>Result</th>
+            <th>Date</th>
+            <th>Best Player</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <img class="team-logo" src="./img/anaheim_ducks.png" alt="Host Team Logo"> vs <img class="team-logo" src="./img/pittsburgh_penguins.png" alt="Guest Team Logo">
+            </td>
+            <td><span class="status-circle alive"></span> live</td>
+            <td>3-2</td>
+            <td>2023-11-13</td>
+            <td>Connor McDavid</td>
+        </tr>
+        <tr>
+            <td>
+                <img class="team-logo" src="./img/calgary_flames.png" alt="Host Team Logo"> vs <img class="team-logo" src="./img/Vancouver_cnucks.png" alt="Guest Team Logo">
+            </td>
+            <td><span class="status-circle finished"></span> Finished</td>
+            <td>2-0</td>
+            <td>2023-11-14</td>
+            <td>David Pastrňák</td>
+        </tr>
+        <tr>
+            <td>
+                <img class="team-logo" src="./img/winnipeg.png" alt="Host Team Logo"> vs <img class="team-logo" src="./img/new_york_rangers.png" alt="Guest Team Logo">
+            </td>
+            <td><span class="status-circle paused"></span> Paused</td>
+            <td>1-1</td>
+            <td>2023-11-15</td>
+            <td>Artemi Panarin</td>
+        </tr>
+        <tr>
+            <td>
+                <img class="team-logo" src="./img/Chicago_Blackhawks.png" alt="Host Team Logo"> vs <img class="team-logo" src="./img/Toronto_Maple.png" alt="Guest Team Logo">
+            </td>
+            <td><span class="status-circle paused"></span> Paused</td>
+            <td>1-1</td>
+            <td>2023-09-06</td>
+            <td>Jason Robertson</td>
+        </tr>
+        <tr>
+            <td>
+                <img class="team-logo" src="./img/Colorado.png" alt="Host Team Logo"> vs <img class="team-logo" src="./img/Tampa.png" alt="Guest Team Logo">
+            </td>
+            <td><span class="status-circle alive"></span> live</td>
+            <td>1-1</td>
+            <td>2023-07-21</td>
+            <td>Vítek Vaněček</td>
+        </tr>
+        <tr>
+            <td>
+                <img class="team-logo" src="./img/Detroit.png" alt="Host Team Logo"> vs <img class="team-logo" src="./img/Washington.png" alt="Guest Team Logo">
+            </td>
+            <td><span class="status-circle alive"></span> live</td>
+            <td>1-1</td>
+            <td>2023-05-15</td>
+            <td>Mitch Marnerv</td>
+        </tr>
+        <tr>
+            <td>
+                <img class="team-logo" src="./img/Minnesota.png" alt="Host Team Logo"> vs <img class="team-logo" src="./img/Vegas.png" alt="Guest Team Logo">
+            </td>
+            <td><span class="status-circle paused"></span> Paused</td>
+            <td>1-1</td>
+            <td>2023-03-22</td>
+            <td>Alex Ovechkin</td>
+        </tr>
+        <tr>
+            <td>
+                <img class="team-logo" src="./img/Ottawa_Senators.png" alt="Host Team Logo"> vs <img class="team-logo" src="./img/Boston.png" alt="Guest Team Logo">
+            </td>
+            <td><span class="status-circle finished"></span> Finished</td>
+            <td>1-1</td>
+            <td>2023-02-10</td>
+            <td>Connor McDavid</td>
+        </tr>
+        <tr>
+            <td>
+                <img class="team-logo" src="./img/Phoenix.png" alt="Host Team Logo"> vs <img class="team-logo" src="./img/Cleveland.png" alt="Guest Team Logo">
+            </td>
+            <td><span class="status-circle finished"></span> Finished</td>
+            <td>1-1</td>
+            <td>2023-01-28</td>
+            <td>David Pastrňák</td>
+        </tr>
+        <tr>
+            <td>
+                <img class="team-logo" src="./img/Vegas.png" alt="Host Team Logo"> vs <img class="team-logo" src="./img/Colorado_Avalanche.png" alt="Guest Team Logo">
+            </td>
+            <td><span class="status-circle paused"></span> Paused</td>
+            <td>1-1</td>
+            <td>2023-01-15</td>
+            <td>Jason Robertson</td>
+        </tr>
+        <!-- Add more rows as needed -->
+    </tbody>
+</table>
